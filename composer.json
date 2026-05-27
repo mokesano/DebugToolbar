@@ -1,6 +1,7 @@
 {
     "name": "wizdamdebug/debug-toolbar",
     "description": "Standalone Debug Toolbar based on CodeIgniter4 DebugBar - Framework Agnostic",
+    "version": "1.0.0.0",
     "type": "library",
     "license": "MIT",
     "config": {
@@ -17,8 +18,8 @@
     ],
     "authors": [
         {
-            "name": "Sangia Publishing House",
-            "email": "dev@sangia.org",
+            "name": "Rochmady",
+            "email": "srochmady@gmail.com",
             "homepage": "https://www.sangia.org",
             "role": "Developer"
         }

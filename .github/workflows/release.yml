@@ -33,8 +33,21 @@ jobs:
             semantic-release \
             @semantic-release/commit-analyzer \
             @semantic-release/release-notes-generator \
-            @semantic-release/github \
-            @semantic-release/git
+            @semantic-release/github
+
+      - name: Generate release config (tanpa npm publish)
+        run: |
+          cat > .releaserc.json <<JSON
+          {
+            "branches": ["main", "master"],
+            "repositoryUrl": "https://github.com/${GITHUB_REPOSITORY}.git",
+            "plugins": [
+              "@semantic-release/commit-analyzer",
+              "@semantic-release/release-notes-generator",
+              "@semantic-release/github"
+            ]
+          }
+          JSON
 
       - name: Jalankan semantic-release
         env:

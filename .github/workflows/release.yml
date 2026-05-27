@@ -28,12 +28,13 @@ jobs:
           node-version: '20'
 
       - name: Install semantic-release dan plugin
-        run: npm install --no-save \
-          semantic-release \
-          @semantic-release/commit-analyzer \
-          @semantic-release/release-notes-generator \
-          @semantic-release/github \
-          @semantic-release/git
+        run: |
+          npm install --no-save \
+            semantic-release \
+            @semantic-release/commit-analyzer \
+            @semantic-release/release-notes-generator \
+            @semantic-release/github \
+            @semantic-release/git
 
       - name: Jalankan semantic-release
         env:

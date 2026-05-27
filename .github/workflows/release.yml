@@ -41,6 +41,7 @@ jobs:
           {
             "branches": ["main", "master"],
             "repositoryUrl": "https://github.com/${GITHUB_REPOSITORY}.git",
+            "tagFormat": "v\${version}.0",
             "plugins": [
               "@semantic-release/commit-analyzer",
               "@semantic-release/release-notes-generator",

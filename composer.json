@@ -1,6 +1,7 @@
 {
     "name": "wizdamdebug/debug-toolbar",
     "description": "Standalone Debug Toolbar based on CodeIgniter4 DebugBar - Framework Agnostic",
+    "version": "1.0.0.0",
     "type": "library",
     "license": "MIT",
     "config": {

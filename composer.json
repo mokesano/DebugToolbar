@@ -3,6 +3,9 @@
     "description": "Standalone Debug Toolbar based on CodeIgniter4 DebugBar - Framework Agnostic",
     "type": "library",
     "license": "MIT",
+    "config": {
+        "vendor-dir": "library"
+    },
     "keywords": [
         "debugbar",
         "debug",
@@ -49,8 +52,6 @@
     },
     "archive": {
         "exclude": [
-            "/Wizdam_DEPRICATED/",
-            "/src_DEPRICATED/",
             "/.github/",
             "/tests/",
             ".editorconfig",

@@ -25,7 +25,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install semantic-release dan plugin
         run: |
@@ -35,7 +35,7 @@ jobs:
             @semantic-release/release-notes-generator \
             @semantic-release/github
 
-      - name: Generate release config (tanpa npm publish)
+      - name: Generate release config (GitHub release only)
         run: |
           cat > .releaserc.json <<JSON
           {

@@ -6,7 +6,7 @@ The development team and community take all security issues seriously. **Please 
 
 Thank you for improving the security of our code! Any assistance in removing security flaws will be acknowledged.
 
-**Please report security flaws by emailing the development team directly: security@codeigniter.com**.
+**Please report security flaws by emailing the development team directly: security@sangia.org**.
 
 The lead maintainer will acknowledge your email within 48 hours, and will send a more detailed response within 48 hours indicating
 the next steps in handling your report. After the initial reply to your report, the security team will endeavor to keep you informed of the
@@ -20,7 +20,7 @@ This person will coordinate the fix and release process, involving the following
 - Confirm the problem and determine the affected versions.
 - Audit code to find any potential similar problems.
 - Prepare fixes for all releases still under maintenance. These fixes will be released as fast as possible.
-- Publish security advisories at https://github.com/codeigniter4/CodeIgniter4/security/advisories
+- Publish security advisories at https://github.com/mokesano/WizdamDebugToolbar/security/advisories
 
 ## Comments on this Policy
 

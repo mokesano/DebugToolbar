@@ -1,17 +1,17 @@
-# 🧰 Wizdam Debug Toolbar
+# 🧰 Debug Toolbar - Wizdam
 
 **Standalone, framework-agnostic debugging toolbar untuk aplikasi PHP. Diekstraksi dan direkayasa ulang dari [CodeIgniter 4 Debug Toolbar](https://github.com/codeigniter4/CodeIgniter4) agar dapat digunakan di luar ekosistem CI4 — termasuk aplikasi legacy seperti OJS 2.4.8.5.**
 
 <p align="center">
-  <a href="https://github.com/mokesano/WizdamDebugToolbar"><img src="https://img.shields.io/badge/PHP-^8.0-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Version"></a>
-  <a href="https://github.com/mokesano/WizdamDebugToolbar/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License"></a>
-  <a href="https://packagist.org/packages/wizdamdebug/debug-toolbar"><img src="https://img.shields.io/badge/packagist-wizdamdebug%2Fdebug--toolbar-F28D1A?style=for-the-badge&logo=packagist&logoColor=white" alt="Packagist"></a>
-  <a href="https://github.com/mokesano/WizdamDebugToolbar/actions"><img src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github-actions&logoColor=white" alt="Build Status"></a>
+  <a href="https://github.com/mokesano/DebugToolbar"><img src="https://img.shields.io/badge/PHP-^8.0-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Version"></a>
+  <a href="https://github.com/mokesano/DebugToolbar/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License"></a>
+  <a href="https://packagist.org/packages/wizdam/debug-toolbar"><img src="https://img.shields.io/badge/packagist-wizdam%2Fdebug--toolbar-F28D1A?style=for-the-badge&logo=packagist&logoColor=white" alt="Packagist"></a>
+  <a href="https://github.com/mokesano/DebugToolbar/actions"><img src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github-actions&logoColor=white" alt="Build Status"></a>
 </p>
 
 ---
 
-## ✨ Mengapa Wizdam Debug Toolbar?
+## ✨ Mengapa Debug Toolbar - Wizdam?
 
 | Situasi | Solusi |
 | :--- | :--- |
@@ -28,7 +28,7 @@
 ### Via Composer (Direkomendasikan)
 
 ```bash
-composer require wizdamdebug/debug-toolbar
+composer require wizdam/debug-toolbar
 ```
 
 ### Integrasi ke Proyek Development
@@ -36,8 +36,8 @@ composer require wizdamdebug/debug-toolbar
 Tambahkan repository ke `composer.json` proyek Anda:
 
 ```bash
-composer config repositories.wizdam-debug-toolbar vcs https://github.com/mokesano/WizdamDebugToolbar.git
-composer require wizdamdebug/debug-toolbar:@dev
+composer config repositories.wizdam-debug-toolbar vcs https://github.com/mokesano/DebugToolbar.git
+composer require wizdam/debug-toolbar:@dev
 ```
 
 > **Dependensi opsional**: `psr/http-message` (untuk integrasi PSR-7) dan `psr/simple-cache` (untuk *history storage*). Tidak ada dependensi wajib lainnya.
@@ -58,7 +58,7 @@ $toolbar->run();
 
 ### Integrasi Aplikasi Legacy (Output Buffering)
 
-Cocok untuk OJS 2.4.8.5 atau aplikasi PHP tanpa *middleware stack*.
+Cocok untuk aplikasi PHP tanpa *middleware stack*.
 
 ```php
 define('WIZDAM_DEBUG', true); // Aktifkan hanya di development!
@@ -165,7 +165,7 @@ $toolbar = new DebugToolbar($config);
 
 ## 📄 Lisensi
 
-**MIT License** — Copyright (c) 2025 Sangia Publishing House. Lihat [LICENSE](https://github.com/mokesano/WizdamDebugToolbar/blob/master/LICENSE) untuk teks lengkap.
+**MIT License** — Copyright (c) 2025 Sangia Publishing House. Lihat [LICENSE](https://github.com/mokesano/DebugToolbar/blob/master/LICENSE) untuk teks lengkap.
 
 > Toolbar ini diadaptasi dari [CodeIgniter 4 Debug Toolbar](https://github.com/codeigniter4/CodeIgniter4) (Copyright British Columbia Institute of Technology). Digunakan dengan modifikasi dan izin sesuai lisensi MIT asli.
 
@@ -174,6 +174,6 @@ $toolbar = new DebugToolbar($config);
 <p align="center">
   <credit>Dibangun dengan ❤️ sebagai bagian dari ekosistem <strong>Wizdam Frontedge</strong> — platform penerbitan ilmiah modern.</credit>
   <br><br>
-  <a href="https://github.com/mokesano/WizdamDebugToolbar/stargazers"><img src="https://img.shields.io/github/stars/mokesano/WizdamDebugToolbar?style=social" alt="GitHub Stars"></a>
-  <a href="https://github.com/mokesano/WizdamDebugToolbar/network/members"><img src="https://img.shields.io/github/forks/mokesano/WizdamDebugToolbar?style=social" alt="GitHub Forks"></a>
+  <a href="https://github.com/mokesano/DebugToolbar/stargazers"><img src="https://img.shields.io/github/stars/mokesano/DebugToolbar?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/mokesano/DebugToolbar/network/members"><img src="https://img.shields.io/github/forks/mokesano/DebugToolbar?style=social" alt="GitHub Forks"></a>
 </p>

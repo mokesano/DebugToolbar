@@ -1,7 +1,9 @@
 # WizdamDebugToolbar .gitignore
 
 # Dependencies
-# vendor/
+vendor/
+library/
+# composer.phar
 # composer.lock
 
 # Logs

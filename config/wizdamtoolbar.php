@@ -10,15 +10,15 @@ declare(strict_types=1);
  * Perubahan dari versi CI4:
  *   - `extends BaseConfig` dihapus — file ini mengembalikan array PHP biasa
  *   - `SYSTEMPATH` diganti dengan path relatif berbasis __DIR__
- *   - Namespace CI4 collector diganti dengan namespace WizdamDebugToolbar
+ *   - Namespace CI4 collector diganti dengan namespace DebugToolbar
  *   - Ditambahkan: `baseURL`, `historyPath`, `environment`, `startTime`
  *
  * Cara penggunaan:
  *   $config  = require 'path/to/config/wizdamtoolbar.php';
- *   $debugBar = new \WizdamDebugToolbar\DebugToolbar($config);
+ *   $debugBar = new \DebugToolbar\DebugToolbar($config);
  *
  * Override per-instalasi:
- *   $debugBar = new \WizdamDebugToolbar\DebugToolbar([
+ *   $debugBar = new \DebugToolbar\DebugToolbar([
  *       'baseURL'     => 'https://ojs.example.com',
  *       'historyPath' => '/var/www/ojs/cache/debugbar/',
  *       'maxHistory'  => 10,
@@ -33,13 +33,13 @@ return [
     // Hapus atau komentari collector yang tidak dibutuhkan.
     // Urutan menentukan urutan tab di toolbar.
     'collectors' => [
-        \WizdamDebugToolbar\Collectors\Timers::class,
-        \WizdamDebugToolbar\Collectors\Database::class,
-        \WizdamDebugToolbar\Collectors\Logs::class,
-        \WizdamDebugToolbar\Collectors\Views::class,
-        \WizdamDebugToolbar\Collectors\Files::class,
-        \WizdamDebugToolbar\Collectors\Routes::class,
-        \WizdamDebugToolbar\Collectors\Events::class,
+        \DebugToolbar\Collectors\Timers::class,
+        \DebugToolbar\Collectors\Database::class,
+        \DebugToolbar\Collectors\Logs::class,
+        \DebugToolbar\Collectors\Views::class,
+        \DebugToolbar\Collectors\Files::class,
+        \DebugToolbar\Collectors\Routes::class,
+        \DebugToolbar\Collectors\Events::class,
     ],
 
     // ---------------------------------------------------------------

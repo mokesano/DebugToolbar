@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WizdamDebugToolbar\Interfaces;
+namespace DebugToolbar\Interfaces;
 
 /**
  * RouterInterface

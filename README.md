@@ -49,7 +49,7 @@ composer require wizdam/debug-toolbar:@dev
 ### Inisialisasi Dasar
 
 ```php
-use WizdamDebugToolbar\DebugToolbar;
+use DebugToolbar\DebugToolbar;
 
 $config = require 'config/wizdamtoolbar.php';
 $toolbar = new DebugToolbar($config);
@@ -63,7 +63,7 @@ Cocok untuk aplikasi PHP tanpa *middleware stack*.
 ```php
 define('WIZDAM_DEBUG', true); // Aktifkan hanya di development!
 
-$middleware = new \WizdamDebugToolbar\Middleware\DebugToolbarMiddleware($toolbar);
+$middleware = new \DebugToolbar\Middleware\DebugToolbarMiddleware($toolbar);
 $middleware->startBuffer();
 
 // ... logika aplikasi Anda berjalan normal ...
@@ -76,8 +76,8 @@ $middleware->endBuffer(); // Toolbar otomatis di-inject di akhir HTML
 Gunakan `AdodbDatabaseAdapter` untuk mencatat query ADODB:
 
 ```php
-use WizdamDebugToolbar\Adapters\AdodbDatabaseAdapter;
-use WizdamDebugToolbar\Collectors\DatabaseCollector;
+use DebugToolbar\Adapters\AdodbDatabaseAdapter;
+use DebugToolbar\Collectors\DatabaseCollector;
 
 $dbAdapter = new AdodbDatabaseAdapter();
 $toolbar->addCollector(new DatabaseCollector($dbAdapter));
@@ -88,7 +88,7 @@ $toolbar->addCollector(new DatabaseCollector($dbAdapter));
 Untuk aplikasi modern yang sudah memiliki *middleware stack*:
 
 ```php
-$app->add(new \WizdamDebugToolbar\Middleware\DebugToolbarMiddleware($toolbar));
+$app->add(new \DebugToolbar\Middleware\DebugToolbarMiddleware($toolbar));
 ```
 
 ---
@@ -132,7 +132,7 @@ return [
 Implementasikan `CollectorInterface`:
 
 ```php
-use WizdamDebugToolbar\Interfaces\CollectorInterface;
+use DebugToolbar\Interfaces\CollectorInterface;
 
 class CacheCollector implements CollectorInterface
 {

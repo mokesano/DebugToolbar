@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 /**
- * @var \WizdamDebugToolbar\DebugToolbar $debugBar
+ * @var \DebugToolbar\DebugToolbar $debugBar
  * @var string  $viewsPath
  * @var string  $baseURL
  * @var string  $DEBUGBAR_VERSION

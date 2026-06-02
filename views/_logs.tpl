@@ -3,7 +3,7 @@
 ?>
 <?php if ($logs === []) : ?>
 <p>Nothing was logged. If you were expecting logged items, call
-   <code>WizdamDebugToolbar\Collectors\Logs::addLog($level, $message)</code>
+   <code>DebugToolbar\Collectors\Logs::addLog($level, $message)</code>
    from your application code.</p>
 <?php else : ?>
 <table>

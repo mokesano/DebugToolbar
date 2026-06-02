@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace WizdamDebugToolbar\Adapters;
+namespace DebugToolbar\Adapters;
 
-use WizdamDebugToolbar\Interfaces\RouterInterface;
+use DebugToolbar\Interfaces\RouterInterface;
 
 /**
  * WizdamRouterAdapter

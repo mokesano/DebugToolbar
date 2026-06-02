@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace WizdamDebugToolbar;
+namespace DebugToolbar;
 
-use WizdamDebugToolbar\Collectors\Config;
-use WizdamDebugToolbar\Collectors\History;
+use DebugToolbar\Collectors\Config;
+use DebugToolbar\Collectors\History;
 
 /**
- * WizdamDebugToolbar DebugToolbar
+ * DebugToolbar DebugToolbar
  *
  * Diadaptasi dari CodeIgniter4 v4.7.2 system/Debug/Toolbar.php
  * Semua dependency CI4 (Services::, service(), WRITEPATH, site_url(), dll)
@@ -20,7 +20,7 @@ class DebugToolbar
 
     protected array $config;
 
-    /** @var list<\WizdamDebugToolbar\Collectors\BaseCollector> */
+    /** @var list<\DebugToolbar\Collectors\BaseCollector> */
     protected array $collectors = [];
 
     public function __construct(array $config = [])
@@ -30,7 +30,7 @@ class DebugToolbar
 
         foreach ($this->config['collectors'] as $collectorClass) {
             if (! class_exists($collectorClass)) {
-                error_log('WizdamDebugToolbar: Collector tidak ditemukan (' . $collectorClass . ').');
+                error_log('DebugToolbar: Collector tidak ditemukan (' . $collectorClass . ').');
                 continue;
             }
             $this->collectors[] = new $collectorClass();

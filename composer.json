@@ -1,5 +1,5 @@
 {
-    "name": "wizdamdebug/debug-toolbar",
+    "name": "wizdam/debug-toolbar",
     "description": "Standalone Debug Toolbar based on CodeIgniter4 DebugBar - Framework Agnostic",
     "type": "library",
     "license": "MIT",
@@ -10,8 +10,8 @@
         "debugbar",
         "debug",
         "toolbar",
-        "wizdam",
-        "ojs",
+        "sciecola",
+        "lumera",
         "adodb",
         "php84"
     ],
@@ -35,17 +35,17 @@
     },
     "autoload": {
         "psr-4": {
-            "WizdamDebugToolbar\\": "src/"
+            "DebugToolbar\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WizdamDebugToolbar\\Tests\\": "tests/"
+            "DebugToolbar\\Tests\\": "tests/"
         }
     },
     "extra": {
         "wizdam": {
-            "compatible-with": "OJS 2.4.8.5+",
+            "compatible-with": "Lumera and legacy systems running PHP 8.0+",
             "php-versions": ["8.0", "8.1", "8.2", "8.3", "8.4"],
             "based-on": "CodeIgniter4 4.7.2 DebugBar (MIT License)"
         }

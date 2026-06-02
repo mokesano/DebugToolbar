@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace WizdamDebugToolbar\Middleware;
+namespace DebugToolbar\Middleware;
 
-use WizdamDebugToolbar\DebugToolbar;
+use DebugToolbar\DebugToolbar;
 
 /**
  * DebugToolbarMiddleware
@@ -17,7 +17,7 @@ use WizdamDebugToolbar\DebugToolbar;
  * MODE 1 — Output Buffering (untuk OJS / aplikasi tanpa PSR-15)
  * ---------------------------------------------------------------
  *   // Di bootstrap OJS (mis: index.php atau pkp-lib/classes/core/PKPApplication.inc.php)
- *   use WizdamDebugToolbar\Middleware\DebugToolbarMiddleware;
+ *   use DebugToolbar\Middleware\DebugToolbarMiddleware;
  *
  *   $middleware = new DebugToolbarMiddleware($debugBar);
  *   $middleware->startBuffer();

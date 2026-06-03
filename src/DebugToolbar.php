@@ -20,7 +20,7 @@ class DebugToolbar
 
     protected array $config;
 
-    /** @var list<\DebugToolbar\Collectors\BaseCollector> */
+    /** @var list \DebugToolbar\Collectors\BaseCollector */
     protected array $collectors = [];
 
     public function __construct(array $config = [])
@@ -30,7 +30,7 @@ class DebugToolbar
 
         foreach ($this->config['collectors'] as $collectorClass) {
             if (! class_exists($collectorClass)) {
-                error_log('DebugToolbar: Collector tidak ditemukan (' . $collectorClass . ').');
+                error_log('DebugToolbar: Collector not found (' . $collectorClass . ').');
                 continue;
             }
             $this->collectors[] = new $collectorClass();

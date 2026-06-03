@@ -11,8 +11,8 @@
 <table>
     <tbody>
         <tr>
-            <td>WizdamDebugToolbar Version:</td>
-            <td><?= htmlspecialchars(\WizdamDebugToolbar\DebugToolbar::VERSION, ENT_QUOTES, 'UTF-8') ?></td>
+            <td>DebugToolbar Version:</td>
+            <td><?= htmlspecialchars(\DebugToolbar\DebugToolbar::VERSION, ENT_QUOTES, 'UTF-8') ?></td>
         </tr>
         <tr>
             <td>PHP Version:</td>

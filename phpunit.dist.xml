@@ -10,7 +10,7 @@
     failOnWarning="true"
 >
     <testsuites>
-        <testsuite name="WizdamDebugToolbar">
+        <testsuite name="DebugToolbar">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

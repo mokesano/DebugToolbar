@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * This file is part of WizdamDebugToolbar library.
+ * This file is part of DebugToolbar library.
  *
  * (c) Wizdam Frontedge <info@wizdam.org>
  *
@@ -19,7 +19,7 @@ declare(strict_types=1);
  * ---
  */
 
-namespace WizdamDebugToolbar\Collectors;
+namespace DebugToolbar\Collectors;
 
 /**
  * Timers collector
